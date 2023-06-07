@@ -1,0 +1,105 @@
+object Form1: TForm1
+  Left = 473
+  Height = 234
+  Top = 301
+  Width = 458
+  Caption = 'Form1'
+  ClientHeight = 234
+  ClientWidth = 458
+  OnCreate = FormCreate
+  LCLVersion = '2.0.12.0'
+  object Label1: TLabel
+    Left = 32
+    Height = 15
+    Top = 48
+    Width = 78
+    Caption = 'Сумма вклада'
+    ParentColor = False
+    OnClick = Label1Click
+  end
+  object Button1: TButton
+    Left = 35
+    Height = 25
+    Top = 160
+    Width = 175
+    Caption = 'Рассчитать простой процент'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Edit1: TEdit
+    Left = 130
+    Height = 23
+    Top = 40
+    Width = 80
+    NumbersOnly = True
+    OnChange = Edit1Change
+    TabOrder = 1
+  end
+  object Label2: TLabel
+    Left = 32
+    Height = 15
+    Top = 88
+    Width = 48
+    Caption = 'Процент'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 277
+    Height = 1
+    Top = 48
+    Width = 1
+    ParentColor = False
+  end
+  object Edit2: TEdit
+    Left = 130
+    Height = 23
+    Top = 80
+    Width = 80
+    NumbersOnly = True
+    OnChange = Edit2Change
+    TabOrder = 2
+  end
+  object Edit3: TEdit
+    Left = 130
+    Height = 23
+    Top = 120
+    Width = 80
+    NumbersOnly = True
+    OnChange = Edit3Change
+    TabOrder = 3
+  end
+  object Label4: TLabel
+    Left = 32
+    Height = 15
+    Top = 128
+    Width = 94
+    Caption = 'Срок (в месяцах)'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 280
+    Height = 15
+    Top = 160
+    Width = 158
+    Caption = 'Сумма в конце срока вклада'
+    ParentColor = False
+  end
+  object Edit4: TEdit
+    Left = 288
+    Height = 23
+    Top = 186
+    Width = 144
+    OnChange = Edit4Change
+    ReadOnly = True
+    TabOrder = 4
+  end
+  object Button2: TButton
+    Left = 35
+    Height = 25
+    Top = 192
+    Width = 175
+    Caption = 'Рассчитать сложный процент'
+    OnClick = Button2Click
+    TabOrder = 5
+  end
+end
